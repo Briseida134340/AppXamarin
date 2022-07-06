@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea.Detalles">
+
+
+
+    <StackLayout>
+        <!--<Grid Padding="10"
+
+            RowDefinitions="Auto, *" ColumnDefinitions="Auto, *">
+
+            <Image x:Name="imageContainer" Grid.RowSpan="2"
+             Aspect="AspectFill"
+             HeightRequest="60"
+             WidthRequest="60"/>
+
+            <Label x:Name="Label" Grid.Row="1"
+             Grid.Column="1"
+             VerticalOptions="End"/>
+        </Grid>-->
+
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Blurryface" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Frame BorderColor="Gray"
+        CornerRadius="5"
+        Padding="8">
+            <StackLayout>
+                <Label x:Name="titulo1"
+             FontSize="24 "
+             FontAttributes="Bold" 
+             HorizontalOptions="Center" 
+             />
+                <BoxView Color="Gray"
+             HeightRequest="2"
+             HorizontalOptions="Fill" />
+
+             <Image x:Name="imageContainer" 
+                      HorizontalOptions="Center"
+                            HeightRequest="200"
+                            WidthRequest="230"
+                    VerticalOptions="CenterAndExpand" />
+
+                <Button Text="Formulario" x:Name="btnFormulario" Clicked="btnFormulario_Clicked" />
+
+
+
+            </StackLayout>
+
+        </Frame>
+    </StackLayout>
+   
+    
+    
+    
+</ContentPage>

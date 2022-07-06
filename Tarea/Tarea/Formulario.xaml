@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea.Formulario">
+    <ContentPage.Content>
+
+        <StackLayout Padding="20">
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Registra tus datos" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Entry x:Name="txtRfc" Placeholder="RFC" />
+            <Entry x:Name="txtName" Placeholder="Name" />
+            <Entry x:Name="txtLastName" Placeholder="Last Name" />
+            <Entry x:Name="txtPhone" Placeholder="Phone" />
+            <Entry x:Name="txtLocation" Placeholder="Location" />
+            <Entry x:Name="txtSuburb" Placeholder="Suburb" />
+            <Picker x:Name="txtEntity" Title="Entity"
+                    ItemDisplayBinding="{Binding name}"
+                    SelectedIndexChanged="txtEntity_SelectedIndexChanged"></Picker>
+            <Picker x:Name="txtMunicipality" Title="Municipality" 
+                    ItemDisplayBinding="{Binding name}"></Picker>
+            <Button Text="Send" x:Name="btnSendProvider" Clicked="btnSendProvider_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
